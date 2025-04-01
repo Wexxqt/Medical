@@ -23,23 +23,24 @@ export const features = [
   {
     id: "feature-1",
     icon: star,
-    title: "Rewards",
+    title: "Login to your account",
     content:
-      "The best credit cards offer some tantalizing combinations of promotions and prizes",
+      "We provide you with medical and dental services to take care of your health.",
   },
   {
     id: "feature-2",
     icon: shield,
-    title: "100% Secured",
+    title: "Book an appointment",
     content:
-      "We take proactive steps make sure your information and transactions are secure.",
+      "View available docotrs and secure your slot.",
   },
   {
     id: "feature-3",
     icon: send,
-    title: "Balance Transfer",
+    title: "Meet your doctor",
     content:
-      "A balance transfer credit card can save you a lot of money in interest charges.",
+      "Meet your doctor and get the medical assistance you need.",
+
   },
 ];
 
