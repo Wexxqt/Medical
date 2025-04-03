@@ -32,7 +32,7 @@ export const features = [
     icon: shield,
     title: "Book an appointment",
     content:
-      "View available docotrs and secure your slot.",
+      "View available doctors and secure your slot.",
   },
   {
     id: "feature-3",
