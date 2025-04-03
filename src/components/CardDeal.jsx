@@ -6,13 +6,12 @@ const CardDeal = () => (
   <section className={layout.section}>
     <div className={layout.sectionInfo}>
       <h2 className={styles.heading2}>
-      Consult the university's doctor for free by securing your slot <br className="sm:block hidden" /> through E-CATSULTA in few easy
-        steps.
-
+      Consult the university's doctor for free <br className="sm:block hidden" /> 
       </h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-        Arcu tortor, purus in mattis at sed integer faucibus. Aliquet quis
-        aliquet eget mauris tortor.ç Aliquet ultrices ac, ametau.
+        Secure your slots now through E-CATSULTA in few easy
+        steps.
+
       </p>
 
       <Button styles={`mt-10`} />

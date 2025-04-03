@@ -1,4 +1,4 @@
-import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star  } from "../assets";
+import { people01, people02, people03, facebook, instagram, twitter as call, airbnb, binance, coinbase, dropbox, send, shield, star  } from "../assets";
 
 export const navLinks = [
   {
@@ -11,11 +11,11 @@ export const navLinks = [
   },
   {
     id: "product",
-    title: "Product",
+    title: "About Us",
   },
   {
     id: "clients",
-    title: "Clients",
+    title: "Services",
   },
 ];
 
@@ -25,7 +25,7 @@ export const features = [
     icon: star,
     title: "Login to your account",
     content:
-      "We provide you with medical and dental services to take care of your health.",
+      "Log in or register to book an appointment.",
   },
   {
     id: "feature-2",
@@ -48,25 +48,25 @@ export const feedback = [
   {
     id: "feedback-1",
     content:
-      "Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver.",
-    name: "Herman Jensen",
-    title: "Founder & Leader",
+      "Visit the clinic at the CatSU Infirmary and let’s keep your smile strong and confident. See you there! 😁💙",
+    name: "DR. GENEVIEVE S. DE CASTRO",
+    title: "Dentist",
     img: people01,
   },
-  {
-    id: "feedback-2",
-    content:
-      "Money makes your life easier. If you're lucky to have it, you're lucky.",
-    name: "Steve Mark",
-    title: "Founder & Leader",
-    img: people02,
-  },
+  // {
+  //   id: "feedback-2",
+  //   content:
+  //     "Money makes your life easier. If you're lucky to have it, you're lucky.",
+  //   name: "Steve Mark",
+  //   title: "Founder & Leader",
+  //   img: people02,
+  // },
   {
     id: "feedback-3",
     content:
-      "It is usually people in the money business, finance, and international trade that are really rich.",
-    name: "Kenn Gallagher",
-    title: "Founder & Leader",
+      "Your health matters! The Catanduanes State University Infirmary offers medical services to help you stay in top shape.",
+    name: "DR. ABEGAIL M. ABUNDO",
+    title: "Medical Officer III",
     img: people03,
   },
 ];
@@ -74,125 +74,116 @@ export const feedback = [
 export const stats = [
   {
     id: "stats-1",
-    title: "User Active",
+    title: "Students ",
     value: "3800+",
   },
   {
     id: "stats-2",
-    title: "Trusted by Company",
+    title: "Employees",
     value: "230+",
   },
-  {
-    id: "stats-3",
-    title: "Transaction",
-    value: "$230M+",
-  },
+  // {
+  //   id: "stats-3",
+  //   title: "Transaction",
+  //   value: "$230M+",
+  // },
 ];
 
 export const footerLinks = [
-  {
-    title: "Useful Links",
-    links: [
-      {
-        name: "Content",
-        link: "https://www.hoobank.com/content/",
-      },
-      {
-        name: "How it Works",
-        link: "https://www.hoobank.com/how-it-works/",
-      },
-      {
-        name: "Create",
-        link: "https://www.hoobank.com/create/",
-      },
-      {
-        name: "Explore",
-        link: "https://www.hoobank.com/explore/",
-      },
-      {
-        name: "Terms & Services",
-        link: "https://www.hoobank.com/terms-and-services/",
-      },
-    ],
-  },
-  {
-    title: "Community",
-    links: [
-      {
-        name: "Help Center",
-        link: "https://www.hoobank.com/help-center/",
-      },
-      {
-        name: "Partners",
-        link: "https://www.hoobank.com/partners/",
-      },
-      {
-        name: "Suggestions",
-        link: "https://www.hoobank.com/suggestions/",
-      },
-      {
-        name: "Blog",
-        link: "https://www.hoobank.com/blog/",
-      },
-      {
-        name: "Newsletters",
-        link: "https://www.hoobank.com/newsletters/",
-      },
-    ],
-  },
-  {
-    title: "Partner",
-    links: [
-      {
-        name: "Our Partner",
-        link: "https://www.hoobank.com/our-partner/",
-      },
-      {
-        name: "Become a Partner",
-        link: "https://www.hoobank.com/become-a-partner/",
-      },
-    ],
-  },
+  // {
+  //   title: "Useful Links",
+  //   links: [
+  //     {
+  //       name: "Content",
+  //       link: "https://www.hoobank.com/content/",
+  //     },
+  //     {
+  //       name: "How it Works",
+  //       link: "https://www.hoobank.com/how-it-works/",
+  //     },
+  //     {
+  //        name: "Our Partner",
+  //        link: "https://www.facebook.com/profile.php?id=100083183649509",
+  //     },
+  //     {
+  //       name: "Explore",
+  //       link: "https://www.hoobank.com/explore/",
+  //     },
+  //     {
+  //       name: "Terms & Services",
+  //       link: "https://www.hoobank.com/terms-and-services/",
+  //     },
+  //   ],
+  // },
+  // {
+  //   title: "Community",
+  //   links: [
+  //     {
+  //       name: "Help Center",
+  //       link: "https://www.hoobank.com/help-center/",
+  //     },
+  //     {
+  //       name: "Partners",
+  //       link: "https://www.hoobank.com/partners/",
+  //     },
+  //     {
+  //       name: "Suggestions",
+  //       link: "https://www.hoobank.com/suggestions/",
+  //     },
+  //     // {
+  //     //   name: "Blog",
+  //     //   target : "_self",
+  //     // },
+  //     // {
+  //     //   name: "Newsletters",
+  //     //   link: "https://www.hoobank.com/newsletters/",
+  //     // },
+  //   ],
+  // },
+  // {
+  //   title: "Partner",
+  //   links: [
+  //     {
+  //       name: "Our Partner",
+  //       link: "https://www.facebook.com/profile.php?id=100083183649509",
+  //     },
+  //   ],
+  // },
 ];
 
 export const socialMedia = [
   {
     id: "social-media-1",
     icon: instagram,
-    link: "https://www.instagram.com/",
+    link: "mailto:catsu.mds2022@gmail.com",
   },
   {
     id: "social-media-2",
     icon: facebook,
-    link: "https://www.facebook.com/",
+    link: "https://www.facebook.com/profile.php?id=100083183649509",
   },
   {
     id: "social-media-3",
-    icon: twitter,
-    link: "https://www.twitter.com/",
-  },
-  {
-    id: "social-media-4",
-    icon: linkedin,
-    link: "https://www.linkedin.com/",
+    icon: call,
+    link: "tel:09124320941",
   },
 ];
 
 export const clients = [
-  {
-    id: "client-1",
-    logo: airbnb,
-  },
-  {
-    id: "client-2",
-    logo: binance,
-  },
-  {
-    id: "client-3",
-    logo: coinbase,
-  },
-  {
-    id: "client-4",
-    logo: dropbox,
-  },
+  // {
+  //   id: "client-1",
+  //   logo: airbnb,
+  // },
+  // {
+  //   id: "client-2",
+  //   logo: binance,
+  // },
+  // {
+  //   id: "client-3",
+  //   logo: coinbase,
+  // },
+  // {
+  //   id: "client-4",
+  //   logo: dropbox,
+  // },
 ];
