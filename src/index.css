@@ -9,24 +9,25 @@
     144.39deg,
     #ffffff -278.56%,
     #6d6d6d -78.47%,
-    #11101d 91.61%
+    #0d0c1d 91.61%
   );
-  --card-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+
+  --card-shadow: 0px 15px 60px -10px rgba(34, 40, 49, 0.15);
 }
 
 * {
   scroll-behavior: smooth;
 }
 
+/* 🎨 Enhanced Text Gradient */
 .text-gradient {
   background: radial-gradient(
-    64.18% 64.18% at 71.16% 35.69%,
-    #a7e1c9 0.89%,
-    #daeee3 17.23%,
-    #0fa966 42.04%,
-    #78e396 55.12%,
-    #298f46 71.54%,
-    #3bb449 100%
+    circle at 50% 40%,
+    #5de4c7 5%,
+    #2ccfa0 25%,
+    #17a977 50%,
+    #0c7c53 75%,
+    #074c33 100%
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -34,107 +35,101 @@
   text-fill-color: transparent;
 }
 
+/* 📌 More Balanced Gradient for Sections */
 .bg-blue-gradient {
   background: linear-gradient(
     157.81deg,
-    #0fa966 0.89%,
-    #daeee3 17.23%,
-    #a7e1c9 42.04%,
-    #78e396 55.12%,
-    #298f46 71.54%,
-    #3bb449 100%
+    #16a34a 0%,
+    #34d399 30%,
+    #059669 65%,
+    #065f46 100%
   );
 }
 
+/* ⚫ More Sleek Dark Gradients */
 .bg-black-gradient {
   background: linear-gradient(
     144.39deg,
-    #ffffff -278.56%,
-    #6d6d6d -78.47%,
-    #11101d 91.61%
+    #ffffff -200%,
+    #525252 -50%,
+    #161616 100%
   );
 }
 
 .bg-black-gradient-2 {
   background: linear-gradient(
     -168.39deg,
-    #ffffff -278.56%,
-    #6d6d6d -78.47%,
-    #11101d 91.61%
+    #ffffff -200%,
+    #525252 -50%,
+    #161616 100%
   );
 }
 
+/* 🔳 Clean & Elegant Gray Gradient */
 .bg-gray-gradient {
   background: linear-gradient(
     153.47deg,
-    rgba(255, 255, 255, 0) -341.94%,
-    #14101d 95.11%
+    rgba(255, 255, 255, 0) -200%,
+    #1a1a2e 95%
   );
 }
 
+/* ⚡ Darker Discount Gradient for More Contrast */
 .bg-discount-gradient {
-  background: linear-gradient(125.17deg, #272727 0%, #11101d 100%);
+  background: linear-gradient(125.17deg, #1a1a1a 0%, #0f172a 100%);
 }
 
+/* 🌟 More Natural Shadow */
 .box-shadow {
-  box-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+  box-shadow: 0px 15px 50px -10px rgba(34, 40, 49, 0.2);
 }
 
+/* 🎭 Sidebar Animation */
 .sidebar {
-  -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
-
-@-webkit-keyframes slide-top {
-  0% {
-    -webkit-transform: translateY(100px);
-    transform: translateY(100px);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
+  -webkit-animation: slide-top 0.5s ease-in-out both;
+  animation: slide-top 0.5s ease-in-out both;
 }
 
 @keyframes slide-top {
   0% {
-    -webkit-transform: translateY(100px);
     transform: translateY(100px);
   }
   100% {
-    -webkit-transform: translateY(0);
     transform: translateY(0);
   }
 }
 
+/* ✨ Feature Card Hover Effect */
 .feature-card:hover {
   background: var(--black-gradient);
   box-shadow: var(--card-shadow);
+  transform: scale(1.03);
+  transition: all 0.3s ease-in-out;
 }
 
-.feedback-container .feedback-card:last-child {
-  margin-right: 0px;
-}
-
+/* 🌟 Feedback Card Hover */
 .feedback-card {
-  background: transparent;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
 }
 
 .feedback-card:hover {
   background: var(--black-gradient);
 }
 
+/* 🌈 Gradient Effects */
 .blue__gradient {
-  background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214d76 100%);
-  filter: blur(123px);
+  background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #2563eb 100%);
+  filter: blur(100px);
 }
 
 .pink__gradient {
-  background: linear-gradient(90deg, #f4c4f3 0%, #fc67fa 100%);
-  filter: blur(900px);
+  background: linear-gradient(90deg, #f472b6 0%, #db2777 100%);
+  filter: blur(500px);
 }
 
 .white__gradient {
   background: rgba(255, 255, 255, 0.6);
-  filter: blur(750px);
+  filter: blur(500px);
 }
