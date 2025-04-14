@@ -18,7 +18,7 @@ const Billing = () => (
       </h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
       E-CATSULTA is an online appointment system designed to make healthcare services at Catanduanes State University Infirmary 
-      more accessible and hassle-free. E-CATSULTA lets students and employees schedule visits, check doctor availability, and avoid long waits—anytime, anywhere. 💙🏥
+      more accessible and hassle-free. E-CATSULTA lets students and employees schedule visits, check doctor availability, and avoid long waits—anytime, anywhere.
       </p>
 
       <div className="flex flex-row flex-wrap sm:mt-10 mt-6">
