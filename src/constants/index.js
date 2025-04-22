@@ -48,7 +48,7 @@ export const feedback = [
   {
     id: "feedback-1",
     content:
-      "Visit the clinic at the CatSU Infirmary and let’s keep your smile strong and confident. See you there! 😁💙",
+      "Visit the clinic at the CatSU Infirmary and let's keep your smile strong and confident. See you there! 😁💙",
     name: "DR. GENEVIEVE S. DE CASTRO",
     title: "Dentist",
     img: people01,
@@ -105,22 +105,6 @@ export const footerLinks = [
       {
         name: "Our Partner",
         link: "https://www.facebook.com/profile.php?id=100083183649509",
-      },
-    ],
-  },{
-    title: "FAQ",
-    links: [
-      {
-        name: "What is e-catsulta?",
-        link: "",
-      },
-      {
-        name: "How can I book an appointment?",
-        link: "",
-      },
-      {
-        name: "Is it free?",
-        link: "",
       },
     ],
   },

@@ -1,5 +1,5 @@
 import styles from "./style";
-import { Billing, Business, CardDeal, Clients, CTA, Footer, Navbar, Stats, Testimonials, Hero } from "./components";
+import { Billing, Business, CardDeal, Clients, CTA, Footer, Navbar, Stats, Testimonials, Hero, FAQ } from "./components";
 // Only import ThemeProvider if ThemeContext is not used elsewhere in this file
 import { ThemeProvider } from "./context/ThemeContext"; 
 
@@ -36,6 +36,7 @@ const ThemedApp = () => {
           <CardDeal />
           <Testimonials />
           <Clients />
+          <FAQ />
           <CTA />
           <Footer />
         </div>

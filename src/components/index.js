@@ -9,6 +9,7 @@ import Footer from "./Footer";
 import Testimonials from "./Testimonials";
 import Hero from "./Hero";
 import ThemeToggle from "./ThemeToggle";
+import FAQ from "./FAQ";
 
 
 export {
@@ -23,5 +24,5 @@ export {
   Testimonials,
   Hero,
   ThemeToggle,
-
+  FAQ,
 };
