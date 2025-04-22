@@ -10,7 +10,7 @@ const GetStarted = () => {
   
   return (
     <a 
-      href="https://e-catsulta.vercel.app/" 
+      href="https://book-ecatsulta.com" 
       target="_self" 
       rel="noopener noreferrer"
       aria-label="Book your appointment now"
