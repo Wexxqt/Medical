@@ -23,7 +23,7 @@ export const features = [
   {
     id: "feature-1",
     icon: star,
-    title: "Login to your account",
+    title: "Log in to your account",
     content:
       "Log in or register to book an appointment.",
   },
@@ -90,65 +90,40 @@ export const stats = [
 ];
 
 export const footerLinks = [
-  // {
-  //   title: "Useful Links",
-  //   links: [
-  //     {
-  //       name: "Content",
-  //       link: "https://www.hoobank.com/content/",
-  //     },
-  //     {
-  //       name: "How it Works",
-  //       link: "https://www.hoobank.com/how-it-works/",
-  //     },
-  //     {
-  //        name: "Our Partner",
-  //        link: "https://www.facebook.com/profile.php?id=100083183649509",
-  //     },
-  //     {
-  //       name: "Explore",
-  //       link: "https://www.hoobank.com/explore/",
-  //     },
-  //     {
-  //       name: "Terms & Services",
-  //       link: "https://www.hoobank.com/terms-and-services/",
-  //     },
-  //   ],
-  // },
-  // {
-  //   title: "Community",
-  //   links: [
-  //     {
-  //       name: "Help Center",
-  //       link: "https://www.hoobank.com/help-center/",
-  //     },
-  //     {
-  //       name: "Partners",
-  //       link: "https://www.hoobank.com/partners/",
-  //     },
-  //     {
-  //       name: "Suggestions",
-  //       link: "https://www.hoobank.com/suggestions/",
-  //     },
-  //     // {
-  //     //   name: "Blog",
-  //     //   target : "_self",
-  //     // },
-  //     // {
-  //     //   name: "Newsletters",
-  //     //   link: "https://www.hoobank.com/newsletters/",
-  //     // },
-  //   ],
-  // },
-  // {
-  //   title: "Partner",
-  //   links: [
-  //     {
-  //       name: "Our Partner",
-  //       link: "https://www.facebook.com/profile.php?id=100083183649509",
-  //     },
-  //   ],
-  // },
+  {
+    title: "How was your experience today?",
+    links: [
+      {
+        name: "Your feedback help us improve our services",
+        link: "http://intranet.catsu.edu.ph:5001/catsu_css_unit/index.php/catsu_ol_css/ext_css/MDS-M",
+      },
+    ],
+  },
+  {
+    title: "Partner",
+    links: [
+      {
+        name: "Our Partner",
+        link: "https://www.facebook.com/profile.php?id=100083183649509",
+      },
+    ],
+  },{
+    title: "FAQ",
+    links: [
+      {
+        name: "What is e-catsulta?",
+        link: "",
+      },
+      {
+        name: "How can I book an appointment?",
+        link: "",
+      },
+      {
+        name: "Is it free?",
+        link: "",
+      },
+    ],
+  },
 ];
 
 export const socialMedia = [
@@ -168,6 +143,7 @@ export const socialMedia = [
     link: "tel:09124320941",
   },
 ];
+
 
 export const clients = [
   // {

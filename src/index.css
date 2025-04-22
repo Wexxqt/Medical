@@ -5,23 +5,27 @@
 @tailwind utilities;
 
 :root {
-  --black-gradient: linear-gradient(
-    144.39deg,
-    #ffffff -278.56%,
-    #6d6d6d -78.47%,
-    #0d0c1d 91.61%
+  /* Default (Light Mode) Variables */
+  --text-gradient: radial-gradient(
+    circle at 50% 40%,
+    #047857 5%,  /* Lighter green start */
+    #059669 25%,
+    #10b981 50%,
+    #34d399 75%,
+    #6ee7b7 100% /* Lighter green end */
   );
-
-  --card-shadow: 0px 15px 60px -10px rgba(34, 40, 49, 0.15);
+  --black-gradient: linear-gradient( /* Light mode "black" gradient -> light gray */
+    144.39deg,
+    #ffffff -100%, /* Start white */
+    #e2e8f0 0%,   /* Light gray */
+    #94a3b8 100%  /* Slightly darker gray */
+  );
+  --card-shadow: 0px 15px 60px -10px rgba(51, 65, 85, 0.15); /* Lighter shadow */
 }
 
-* {
-  scroll-behavior: smooth;
-}
-
-/* 🎨 Enhanced Text Gradient */
-.text-gradient {
-  background: radial-gradient(
+html.dark {
+  /* Dark Mode Variables */
+  --text-gradient: radial-gradient( /* Original dark text gradient */
     circle at 50% 40%,
     #5de4c7 5%,
     #2ccfa0 25%,
@@ -29,62 +33,133 @@
     #0c7c53 75%,
     #074c33 100%
   );
+   --black-gradient: linear-gradient( /* Original dark black gradient */
+    144.39deg,
+    #ffffff -278.56%,
+    #6d6d6d -78.47%,
+    #0d0c1d 91.61%
+  );
+  --card-shadow: 0px 15px 60px -10px rgba(34, 40, 49, 0.15); /* Original dark shadow */
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+/* Apply text gradient using CSS variable */
+.text-gradient {
+  background: var(--text-gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
 }
 
-/* 📌 More Balanced Gradient for Sections */
+/* 🎨 Enhanced Gradients - Default is Light Mode */
+
 .bg-blue-gradient {
+  /* Light mode blue gradient */
   background: linear-gradient(
     157.81deg,
-    #16a34a 0%,
-    #34d399 30%,
-    #059669 65%,
-    #065f46 100%
+    #047857 0%,
+    #059669 30%,
+    #10b981 65%,
+    #34d399 100%
   );
 }
 
-/* ⚫ More Sleek Dark Gradients */
+.dark .bg-blue-gradient {
+  /* Dark mode blue gradient */
+  background: linear-gradient(
+    157.81deg,
+    #16a34a 0%, /* Darker green start */
+    #34d399 30%,
+    #059669 65%,
+    #065f46 100% /* Darker green end */
+  );
+}
+
 .bg-black-gradient {
+   /* Light mode "black" gradient -> light gray */
   background: linear-gradient(
     144.39deg,
-    #ffffff -200%,
+    #ffffff -10%,
+    #f1f5f9 40%,
+    #e2e8f0 100%
+  );
+}
+
+.dark .bg-black-gradient {
+  /* Dark mode black gradient */
+  background: linear-gradient(
+    144.39deg,
+    #ffffff -200%, /* Keeping original dark values */
     #525252 -50%,
     #161616 100%
   );
 }
 
 .bg-black-gradient-2 {
+  /* Light mode "black" gradient 2 -> light gray */
   background: linear-gradient(
     -168.39deg,
-    #ffffff -200%,
+    #ffffff -10%,
+    #f1f5f9 40%,
+    #e2e8f0 100%
+  );
+}
+
+.dark .bg-black-gradient-2 {
+  /* Dark mode black gradient 2 */
+  background: linear-gradient(
+    -168.39deg,
+    #ffffff -200%, /* Keeping original dark values */
     #525252 -50%,
     #161616 100%
   );
 }
 
-/* 🔳 Clean & Elegant Gray Gradient */
 .bg-gray-gradient {
+  /* Light mode gray gradient */
   background: linear-gradient(
     153.47deg,
-    rgba(255, 255, 255, 0) -200%,
+    #ffffff -10%,
+    #f8fafc 95%
+  );
+}
+
+.dark .bg-gray-gradient {
+  /* Dark mode gray gradient */
+  background: linear-gradient(
+    153.47deg,
+    rgba(255, 255, 255, 0) -200%, /* Keeping original dark values */
     #1a1a2e 95%
   );
 }
 
-/* ⚡ Darker Discount Gradient for More Contrast */
 .bg-discount-gradient {
+  /* Light mode discount gradient */
+  background: linear-gradient(125.17deg, #e2e8f0 0%, #cbd5e1 100%);
+}
+
+.dark .bg-discount-gradient {
+  /* Dark mode discount gradient */
   background: linear-gradient(125.17deg, #1a1a1a 0%, #0f172a 100%);
 }
 
-/* 🌟 More Natural Shadow */
+/* 🌟 Shadows & Effects - Default is Light Mode */
 .box-shadow {
+   /* Light mode shadow (slightly softer) */
+  box-shadow: 0px 10px 40px -12px rgba(51, 65, 85, 0.18);
+}
+
+.dark .box-shadow {
+  /* Dark mode shadow (original definition) */
   box-shadow: 0px 15px 50px -10px rgba(34, 40, 49, 0.2);
 }
 
-/* 🎭 Sidebar Animation */
+
+/* 🎭 Sidebar Animation (Remains the same) */
 .sidebar {
   -webkit-animation: slide-top 0.5s ease-in-out both;
   animation: slide-top 0.5s ease-in-out both;
@@ -99,37 +174,76 @@
   }
 }
 
-/* ✨ Feature Card Hover Effect */
-.feature-card:hover {
-  background: var(--black-gradient);
-  box-shadow: var(--card-shadow);
-  transform: scale(1.03);
-  transition: all 0.3s ease-in-out;
+/* ✨ Feature Card Hover Effect - Using CSS Variables */
+.feature-card {
+  /* Add default light mode background/styles if needed */
+  transition: all 0.3s ease-in-out; /* Keep transition */
 }
 
-/* 🌟 Feedback Card Hover */
+.feature-card:hover {
+  background: var(--black-gradient); /* Uses variable */
+  box-shadow: var(--card-shadow);    /* Uses variable */
+  transform: scale(1.03);
+}
+
+/* 🌟 Feedback Card - Default is Light Mode */
 .feedback-card {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.9); /* Light mode background */
+  border: 1px solid rgba(148, 163, 184, 0.2); /* Light mode border */
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); /* Light mode shadow */
+  backdrop-filter: blur(5px); /* Slightly less blur for light */
+  transition: background 0.3s ease-in-out;
+}
+
+.dark .feedback-card {
+  background: rgba(255, 255, 255, 0.05); /* Dark mode background */
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Dark mode border */
+  box-shadow: none; /* Remove explicit shadow for dark, rely on bg contrast */
+  backdrop-filter: blur(10px); /* Original blur for dark */
 }
 
 .feedback-card:hover {
-  background: var(--black-gradient);
+   /* Use variable for hover, works for both modes */
+   background: var(--black-gradient);
 }
 
-/* 🌈 Gradient Effects */
+/* 🌈 Background Gradient Effects - Default is Light Mode */
 .blue__gradient {
-  background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #2563eb 100%);
+  /* Light mode blue gradient effect */
+  background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #3b82f6 100%);
   filter: blur(100px);
+  opacity: 0.5;
+}
+
+.dark .blue__gradient {
+  /* Dark mode blue gradient effect */
+  background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #2563eb 100%);
+  filter: blur(100px); /* Keep blur */
+  opacity: 1; /* Restore opacity */
 }
 
 .pink__gradient {
+  /* Light mode pink gradient effect */
   background: linear-gradient(90deg, #f472b6 0%, #db2777 100%);
   filter: blur(500px);
+  opacity: 0.4;
+}
+
+.dark .pink__gradient {
+  /* Dark mode pink gradient effect */
+  background: linear-gradient(90deg, #f472b6 0%, #db2777 100%);
+  filter: blur(500px); /* Keep blur */
+  opacity: 1; /* Restore opacity */
 }
 
 .white__gradient {
-  background: rgba(255, 255, 255, 0.6);
+  /* Light mode white gradient effect */
+  background: rgba(203, 213, 225, 0.8);
   filter: blur(500px);
+}
+
+.dark .white__gradient {
+  /* Dark mode white gradient effect */
+  background: rgba(255, 255, 255, 0.6);
+  filter: blur(500px); /* Keep blur */
 }
