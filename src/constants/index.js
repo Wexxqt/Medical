@@ -108,6 +108,15 @@ export const footerLinks = [
       },
     ],
   },
+  {
+    title: "Legal",
+    links: [
+      {
+        name: "Privacy Policy",
+        link: "/privacy-policy",
+      },
+    ],
+  },
 ];
 
 export const socialMedia = [

@@ -1,5 +1,6 @@
 import styles from "./style";
 import { Billing, Business, CardDeal, Clients, CTA, Footer, Navbar, Stats, Testimonials, Hero, FAQ } from "./components";
+import PrivacyPolicy from "./components/PrivacyPolicy";
 // Only import ThemeProvider if ThemeContext is not used elsewhere in this file
 import { ThemeProvider } from "./context/ThemeContext"; 
 
@@ -48,7 +49,11 @@ const ThemedApp = () => {
 // Root App component remains the same
 const App = () => (
   <ThemeProvider>
-    <ThemedApp />
+    {typeof window !== 'undefined' && window.location.pathname === '/privacy-policy' ? (
+      <PrivacyPolicy />
+    ) : (
+      <ThemedApp />
+    )}
   </ThemeProvider>
 );
 
