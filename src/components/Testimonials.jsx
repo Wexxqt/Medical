@@ -12,7 +12,7 @@ const Testimonials = () => (
       </h2>
       <div className="w-full md:mt-0 mt-6">
         <p className={`${styles.paragraph} text-left max-w-[450px]`}>
-        Your health is our priority—see you at the infirmary!
+        Your health is our priority—see you at the clinic!
         </p>
       </div>
     </div>
