@@ -9,11 +9,11 @@ const faqData = [
   },
   {
     question: "How do I book an appointment?",
-    answer: "To book an appointment, simply log in to your account or register if you’re a new user. Once logged in, you can view the list of available doctors and choose a time slot that fits your schedule. After securing your appointment, all that’s left is to meet your doctor at the Catanduanes State University Infirmary and receive the medical assistance you need."
+    answer: "To book an appointment, simply log in to your account or register if you’re a new user. Once logged in, you can view the list of available doctors and choose a time slot that fits your schedule. After securing your appointment, all that’s left is to meet your doctor at the Catanduanes State University Clinic  and receive the medical assistance you need."
   },
   {
     question: "Can I cancel or reschedule my appointment?",
-    answer: "No, once an appointment is scheduled, cancellations or rescheduling are not allowed, especially to avoid last-minute cancellations that can leave appointment slots unused. This policy ensures that the infirmary can manage time and resources efficiently and give fair access to medical services for all students and staff.  "
+    answer: "No, once an appointment is scheduled, cancellations or rescheduling are not allowed, especially to avoid last-minute cancellations that can leave appointment slots unused. This policy ensures that the clinic can manage time and resources efficiently and give fair access to medical services for all students and staff.  "
   },
   {
     question: "Is my medical information secure?",
@@ -21,7 +21,7 @@ const faqData = [
   },
   {
     question: "What should I bring to my appointment?",
-    answer: "Please bring a screenshot of your appointment QR code or a copy of your appointment code along with your valid University ID. If you don’t have your ID, you may present your Certificate of Enrollment as proof. The infirmary staff will scan your QR code or manually input your appointment code for verification before your consultation."
+    answer: "Please bring a screenshot of your appointment QR code or a copy of your appointment code along with your valid University ID. If you don’t have your ID, you may present your Certificate of Enrollment as proof. The medical clerk will scan your QR code or manually input your appointment code for verification before your consultation."
   }
 ];
 
