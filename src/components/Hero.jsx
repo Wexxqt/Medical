@@ -32,7 +32,7 @@ const Hero = () => {
           Today
         </h1>
         <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-          Access free medical and dental services at Catanduanes State University Infirmary. 
+          Access free medical and dental services at Catanduanes State University Clinic. 
           Skip the wait and schedule your appointment now!
         </p>
       </div>
