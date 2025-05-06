@@ -34,7 +34,7 @@ const Business = () => {
           Book your appointment <br className="sm:block hidden" /> in three easy steps.
         </h2>
         <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-          Our streamlined booking process ensures you can quickly connect with healthcare professionals at Catanduanes State University Infirmary.
+          Our streamlined booking process ensures you can quickly connect with healthcare professionals at Catanduanes State University Clinic.
         </p>
 
         <Button styles={`mt-10`} />
