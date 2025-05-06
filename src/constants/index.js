@@ -48,7 +48,7 @@ export const feedback = [
   {
     id: "feedback-1",
     content:
-      "Visit the clinic at the CatSU Infirmary and let's keep your smile strong and confident. See you there! 😁💙",
+      "Visit the clinic at the CatSU Clinic and let's keep your smile strong and confident. See you there! 😁💙",
     name: "DR. GENEVIEVE S. DE CASTRO",
     title: "Dentist",
     img: people01,
@@ -64,7 +64,7 @@ export const feedback = [
   {
     id: "feedback-3",
     content:
-      "Your health matters! The Catanduanes State University Infirmary offers medical services to help you stay in top shape.",
+      "Your health matters! The Catanduanes State University Clinic offers medical services to help you stay in top shape.",
     name: "DR. ABEGAIL M. ABUNDO",
     title: "Medical Officer III",
     img: people03,
