@@ -9,7 +9,7 @@ const PrivacyPolicy = () => (
     <section className="mb-10">
       <h2 className="text-2xl font-semibold mb-3 text-green-500 dark:text-green-300">Introduction</h2>
       <p className="text-base leading-relaxed">
-        E-CATSULTA is an online health service platform developed for Catanduanes State University. We are committed to protecting the privacy and personal data of all users including students, faculty, and staff. This privacy policy outlines how we collect, use, and safeguard your information.
+        E-CATSULTA is an online health service platform developed for Catanduanes State University Clinic. We are committed to protecting the privacy and personal data of all users including students, faculty, and staff. This privacy policy outlines how we collect, use, and safeguard your information.
       </p>
     </section>
 
