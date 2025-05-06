@@ -23,7 +23,7 @@ const Billing = () => {
           Easily book your appointments <br className="sm:block hidden" /> & healthcare access.
         </h2>
         <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-          E-CATSULTA is an online appointment system designed to make healthcare services at Catanduanes State University Infirmary
+          E-CATSULTA is an online appointment system designed to make healthcare services at Catanduanes State University Clinic
           more accessible and hassle-free. E-CATSULTA lets students and employees schedule visits, check doctor availability, and avoid long waits—anytime, anywhere.
         </p>
 
